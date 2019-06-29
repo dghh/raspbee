@@ -6,7 +6,8 @@ This modul connects the **RaspBee** extension board (for Zigbee Devices) or the 
 So, you need only
 - IP Symcon
 - RaspBee extension board (for Raspberry) or a ConBee usb Stick
-- some ZigBee devices (eg. Osram, Hue, Xiaomi, Heiman and lots of others. 
+- some ZigBee devices (eg. Osram, Hue, Xiaomi, Heiman and lots of others
+- this modul :wink: of course
 
 <br>
 
