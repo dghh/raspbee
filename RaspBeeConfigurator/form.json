@@ -1,0 +1,198 @@
+{
+  "elements": [
+   {
+     "name": "Host",
+	 "type": "Label",
+	 "label": "Raspbee"
+  },
+   {  
+      "name": "LightsCategory",
+      "type": "SelectCategory",
+      "caption": "Lamps category"
+    },
+    {
+      "name": "PlugsCategory",
+      "type": "SelectCategory",
+      "caption": "Plugs category"
+    },
+	{
+      "name": "GroupsCategory",
+      "type": "SelectCategory",
+      "caption": "Groups category"
+    },
+    {
+      "name": "SensorsCategory",
+      "type": "SelectCategory",
+      "caption": "Sensors category"
+    },
+    {
+      "name": "ScenesCategory",
+      "type": "SelectCategory",
+      "caption": "Scenes category"
+    },
+    {
+      "name": "SwitchesCategory",
+      "type": "SelectCategory",
+      "caption": "Switches category"
+    }
+	
+  ],  
+  "actions": [
+    {
+     "type": "Label",
+     "label": "Platzhalter Counter"
+  },
+			{
+                    "type": "List",
+                    "name": "Plugs",
+                    "rowCount": 15,
+                    "add": false,
+                    "delete": false,
+                    "sort": {
+                        "column": "DeviceType",
+                        "direction": "ascending"
+                    },
+                    "columns": [
+						{
+                            "caption": "Instanz aktiv",
+                            "name": "Aktiv",
+                            "width": "100px"							
+		                },{
+                            "caption": "InstanzID",
+                            "name": "InstanceID",
+                            "width": "100px"
+                        },{
+                            "caption": "Name",
+                            "name": "Name",
+                            "width": "220px"							
+                        },{
+                            "caption": "Unique-Id",
+                            "name": "DeviceUid",
+                            "width": "220px"
+                        },{
+                            "caption": "Typ",
+                            "name": "DeviceType",
+                            "width": "80px"
+                        },{
+                            "caption": "An/Aus",
+                            "name": "DeviceOn",
+                            "width": "100px"
+                        },{
+                            "caption": "Reachable",
+                            "name": "DeviceReach",
+                            "width": "auto"
+                        }
+                    ],
+                    "values": []
+                },  
+  {"type": "RowLayout",
+        "items": [   
+   
+   {
+      "type": "Button",
+      "label": "Markiertes Device anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'create');"
+    },
+   {
+      "type": "Button",
+      "label": "Markiertes Device löschen",
+	  "onClick": "RB_configuration($id,$Plugs,'delete');"
+    }]},
+  {"type": "RowLayout",
+        "items": [   
+    {
+      "type": "Button",
+      "label": "Alle Lights anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'lights');"
+    },
+    {
+      "type": "Button",
+      "label": "Alle Plugs anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'plugs');"
+    },
+    {
+      "type": "Button",
+      "label": "Alle Groups anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'groups');"
+    },
+    {
+      "type": "Button",
+      "label": "Alle Sensors anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'sensors');"
+    },
+    {
+      "type": "Button",
+      "label": "Alle Scenes anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'scenes');"
+    },
+    {
+      "type": "Button",
+      "label": "Alle Switches anlegen",
+      "onClick": "RB_configuration($id,$Plugs,'switches');"
+    }]},
+  {"type": "RowLayout",
+        "items": [   
+	{
+      "type": "Button",
+      "label": "Alle Devices anlegen",
+      "onClick": "RB_SyncDevices($id);"
+    },{
+      "type": "Button",
+      "label": "Alle Devices löschen",
+      "onClick": "RB_delete_all($id);"
+    }]},
+  {"type": "RowLayout",
+        "items": [   
+	{
+      "type": "Button",
+      "label": "Refresh status",
+      "onClick": "RB_SyncStates($id);"
+    },
+    {
+      "type": "Button",
+      "label": "Check device code",
+      "onClick": "RB_configuration($id,$Plugs,'check');"
+    }]}
+	],
+  "status": [{
+      "code": 101,
+      "icon": "active",
+      "caption": "Bridge was created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Bridge is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Bridge was deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Please check configuration"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "User is not registered"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "User could not be registered. Please press the button on bridge."
+    },
+    {
+      "code": 203,
+      "icon": "error",
+      "caption": "Bridge is not reachable"
+    },
+    {
+      "code": 299,
+      "icon": "error",
+      "caption": "Unknown error"
+    }
+  ]
+}

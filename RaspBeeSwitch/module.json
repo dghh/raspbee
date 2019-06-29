@@ -1,0 +1,11 @@
+{
+  "id": "{8691D506-3B80-46AB-B04E-A4A42B0A38AE}",
+  "name": "RaspBeeSwitch",
+  "type": 3,
+  "vendor": "Dresden Elektronik",
+  "aliases": ["Dresden Elektronik RaspBee Switch"],
+  "parentRequirements": ["{F9F6DB0C-EE2E-49DA-BDA5-B1E27246971F}"],
+  "childRequirements": [],
+  "implemented": ["{39B633D9-26E9-4D49-A120-12F622AC3340}"],
+  "prefix": "RB"
+}

@@ -1,0 +1,46 @@
+{
+  "actions": [{
+    "type": "Button",
+    "label": "An",
+    "onClick": "RB_SetState($id, true);"
+  }, {
+    "type": "Button",
+    "label": "Aus",
+    "onClick": "RB_SetState($id, false);"
+  }, {
+    "type": "Button",
+    "label": "Refresh status",
+    "onClick": "RB_RequestData($id);"
+  }],
+  "status": [{
+      "code": 101,
+      "icon": "active",
+      "caption": "Plug was created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Plug is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Plug was deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Please have the Plug created over the bridge"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Plug is not reachable"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Unknown error"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "{B1426B84-13B4-4D76-BC3B-33869AE9EA1F}",
+  "name": "RaspBeeLight",
+  "type": 3,
+  "vendor": "Dresden Elektronik",
+  "aliases": ["Dresden Elektronik RaspBee Light"],
+  "parentRequirements": ["{F9F6DB0C-EE2E-49DA-BDA5-B1E27246971F}"],
+  "childRequirements": [],
+  "implemented": ["{39B633D9-26E9-4D49-A120-12F622AC3340}"],
+  "prefix": "RB"
+}

@@ -1,0 +1,98 @@
+{
+  "actions": [{
+    "type": "Button",
+    "label": "An",
+    "onClick": "RB_SetState($id, true);"
+  }, {
+    "type": "Button",
+    "label": "Aus",
+    "onClick": "RB_SetState($id, false);"
+  }, {
+    "type": "Button",
+    "label": "Refresh status",
+    "onClick": "RB_RequestData($id);"
+  },	{
+                    "type": "List",
+                    "name": "Plugs",
+                    "rowCount": 15,
+                    "add": false,
+                    "delete": false,
+                    "sort": {
+                        "column": "light",
+                        "direction": "ascending"
+                    },
+                    "columns": [
+						{
+                            "caption": "No",
+                            "name": "light",
+                            "width": "70px"							
+		                },{
+                            "caption": "Bri",
+                            "name": "bri",
+                            "width": "80px"
+                        },{
+                            "caption": "Colormode",
+                            "name": "colormode",
+                            "width": "100px"							
+                        },{
+                            "caption": "Ct",
+                            "name": "ct",
+                            "width": "60px"
+                        },{
+                            "caption": "Light-id",
+                            "name": "id",
+                            "width": "80px"
+                        },{
+                            "caption": "Light-name",
+                            "name": "name",
+                            "width": "180px"
+                        },
+						{
+                            "caption": "Status",
+                            "name": "on",
+                            "width": "100px"
+                        },{
+                            "caption": "Reachable",
+                            "name": "reachable",
+                            "width": "70"
+                        },{
+                            "caption": "Unique-Id",
+                            "name": "uniqueid",
+                            "width": "auto"
+                        }						
+                    ],
+                    "values": []
+                }  
+  ],
+  "status": [{
+      "code": 101,
+      "icon": "active",
+      "caption": "Group was created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Group is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Group was deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Please have the group created over the bridge"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Group is not reachable"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Unknown error"
+    }
+  ]
+}

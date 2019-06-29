@@ -1,0 +1,98 @@
+{
+  "actions": [{
+    "type": "Button",
+    "label": "Refresh status",
+    "onClick": "RB_RequestData($id);"
+  },	{
+                    "type": "List",
+                    "name": "Plugs",
+                    "rowCount": 5,
+                    "add": false,
+                    "delete": false,
+                    "sort": {
+                        "column": "light",
+                        "direction": "ascending"
+                    },
+                    "columns": [
+						{
+                            "caption": "No",
+                            "name": "light",
+                            "width": "80px"							
+		                },{
+                            "caption": "Bri",
+                            "name": "bri",
+                            "width": "80px"
+                        },{
+                            "caption": "Ct",
+                            "name": "ct",
+                            "width": "80px"
+                        },{
+                            "caption": "Light-id",
+                            "name": "id",
+                            "width": "80px"
+                        },{
+                            "caption": "Light-name",
+                            "name": "name",
+                            "width": "80px"
+                        },{
+                            "caption": "Status",
+                            "name": "on",
+                            "width": "80px"
+                        },{
+                            "label": "TransTime",
+                            "name": "transtime",
+                            "width": "80"
+                        },{
+                            "caption": "Colormode",
+                            "name": "colormode",
+                            "width": "100px"
+                        },{
+                            "caption": "x",
+                            "name": "x",
+                            "width": "100"
+                        },{
+                            "caption": "y",
+                            "name": "y",
+                            "width": "auto"
+                        }						
+                    ],
+                    "values": []
+                } 						
+	],
+  "status": [{
+      "code": 101,
+      "icon": "active",
+      "caption": "Scene was created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Scene is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Scene was deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Please have the v created over the bridge"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Scene is not reachable"
+    },
+    {
+      "code": 203,
+      "icon": "error",
+      "caption": "Light from Scene is not reachable"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Unknown error"
+    }
+  ]
+}

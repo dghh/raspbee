@@ -1,0 +1,11 @@
+{
+  "id": "{1051CA2C-7F9E-44D4-A47A-F923CD99C237}",
+  "name": "RaspBeeSensor",
+  "type": 3,
+  "vendor": "Dresden Elektronik",
+  "aliases": ["Dresden Elektronik RaspBee Sensor"],
+  "parentRequirements": ["{F9F6DB0C-EE2E-49DA-BDA5-B1E27246971F}"],
+  "childRequirements": [],
+  "implemented": ["{39B633D9-26E9-4D49-A120-12F622AC3340}"],
+  "prefix": "RB"
+}

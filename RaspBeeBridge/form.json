@@ -1,0 +1,81 @@
+{
+  "elements": [{
+      "name": "Host",
+      "type": "ValidationTextBox",
+      "caption": "Gateway"
+    },
+    {
+      "name": "Port",
+      "type": "ValidationTextBox",
+      "caption": "Port"
+    },
+    {
+      "name": "User",
+      "type": "ValidationTextBox",
+      "caption": "Api-Key"
+    },
+    {
+      "name": "Username",
+      "type": "ValidationTextBox",
+      "caption": "DeConz User"
+    },
+    {
+      "name": "Userpass",
+      "type": "ValidationTextBox",
+      "caption": "DeConz Password"
+    }	
+  ],  
+  "actions": [  
+     {
+      "type": "Button",
+      "label": "Gateway suchen",
+      "onClick": "RB_get_gateway($id);"
+    },
+     {
+      "type": "Button",
+      "label": "Api Key generieren",
+      "onClick": "RB_CreateApiKey($id);"
+    }
+	],
+  "status": [{
+      "code": 101,
+      "icon": "active",
+      "caption": "Bridge was created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Bridge is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Bridge was deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Please check configuration"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "ApiKey is not registered"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "ApiKey could not be registered. Please create ApiKey on Raspbee Bridge."
+    },
+    {
+      "code": 203,
+      "icon": "error",
+      "caption": "Bridge is not reachable"
+    },
+    {
+      "code": 299,
+      "icon": "error",
+      "caption": "Unknown error"
+    }
+  ]
+}

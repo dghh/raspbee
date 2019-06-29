@@ -1,0 +1,11 @@
+{
+  "id": "{272421BE-BB96-4082-ADA7-A642F3734E8D}",
+  "name": "RaspBeeGroup",
+  "type": 3,
+  "vendor": "Dresden Elektronik",
+  "aliases": ["Dresden Elektronik RaspBee Group"],
+  "parentRequirements": ["{F9F6DB0C-EE2E-49DA-BDA5-B1E27246971F}"],
+  "childRequirements": [],
+  "implemented": ["{39B633D9-26E9-4D49-A120-12F622AC3340}"],
+  "prefix": "RB"
+}

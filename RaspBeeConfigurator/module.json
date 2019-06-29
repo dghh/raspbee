@@ -1,0 +1,11 @@
+{
+  "id": "{A7D43A06-9EFE-421C-81F8-FBA5EFAF359C}",
+  "name": "RaspBeeConfigurator",
+  "type": 4,
+  "vendor": "Dresden Elektronik",
+  "aliases": ["RaspBee Configurator"],
+  "parentRequirements": ["{F9F6DB0C-EE2E-49DA-BDA5-B1E27246971F}"],
+  "childRequirements": [],
+  "implemented": ["{39B633D9-26E9-4D49-A120-12F622AC3340}"],
+  "prefix": "RB"
+}
