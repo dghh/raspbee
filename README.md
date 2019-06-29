@@ -1,13 +1,13 @@
 # SymconRaspBee
 <br>
+
+
+Please read ![the Documentation](https://github.com/dghh/raspbee/edit/master/RaspBee.docx) first
+
+
 <br>
 
-# Please read ![the Documentation](https://github.com/dghh/raspbee/edit/master/RaspBee.docx) first
-
-<br>
-<br>
-
-# *This is work in progress, although working already*
+*This is work in progress, although working already*
 
 <br>
 <br>
