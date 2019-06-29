@@ -1,13 +1,25 @@
 # SymconRaspBee
 <br>
 
+This modul connects the **RaspBee** extension board (for Zigbee Devices) or the **ConBee** usb stick with IP Symcon.
 
-Please read ![the Documentation](https://github.com/dghh/raspbee/edit/master/RaspBee.docx) first
+So, you need only
+- IP Symcon
+- RaspBee extension board (for Raspberry) or a ConBee usb Stick
+- some ZigBee devices (eg. Osram, Hue, Xiaomi, Heiman and lots of others. 
+
+<br>
+
+   Overview on currently supported devices: https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices
+
+<br>
+
+# Please read ![the Documentation](https://github.com/dghh/raspbee/edit/master/RaspBee.docx) first
 
 
 <br>
 
-*This is work in progress, although working already*
+# *This is work in progress, although working already*
 
 <br>
 <br>
