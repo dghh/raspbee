@@ -2,9 +2,11 @@
   "id": "{EF068255-A174-4AE1-8D80-E019D94AB681}",
   "author": "GH",
   "name": "SymconRaspBee",
-  "url": "",
+  "url": "https://github.com/dghh/raspbee",
+  "compatibility": {
+    "version": "5.1" },
   "version": "0.2",
-  "build": 0,
+  "build": 11,  
   "date": 0
 }
 
