@@ -5,9 +5,9 @@ This modul connects the **RaspBee** extension board (for Zigbee Devices) or the 
 
 It enables you to work with most ZigBee devices without the need of other specific bridges. 
 
-One of the main advantages (and one of the reasons to write this modul...) is that there is no frequent "pull" of the current status of the devices. This will keep the system performance untouched by frequent requests to the bridge, although nothing changed in the meantime. Status will be updated in real time (very important eg. for presence sensors) as soon as and only if something changes in the status of the devices. This is done of course only for the specific attribute of the changed device. This keeps also the write activity to the system storage as low as posasible (SD cards...)
+One of the main advantages (and one of the reasons to write this modul...) is that there is no frequent "pull" of the current status of the devices. This will keep the system performance untouched by frequent requests to the bridge, although nothing changed in the meantime. Status will be updated in real time (very important eg. for presence sensors) as soon as and only if something changes in the status of the devices. This is done of course only for the specific attribute of the changed device. This keeps also the write activity to the system storage as low as possible (SD cards...)
 
-Supported functionality:
+Supported functionality (functionality depends on the availability within the specific devices):
 
 - control lights (eg. on/off, color, hue, sat, alarm, loops, effect, reachable etc.)
 - control plugs (eg. on/off, consumption, current, voltage, power, alert, reachable etc.)
@@ -17,7 +17,7 @@ Supported functionality:
 - scenes (eg. on/off, state)
 - timers (set on-timer or off-timer for all devices)
 
-Functionality depends on the availability within the specific devices.
+Additional input, hints or comments for more/changed functionality or integration of other devices are appreciated.
 
 <br>
 
