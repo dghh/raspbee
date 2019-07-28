@@ -6,6 +6,18 @@ This modul connects the **RaspBee** extension board (for Zigbee Devices) or the 
 
 It enables you to work with most ZigBee devices without the need of other specific bridges.
 
+Supported functionality:
+
+- control lights (eg. on/off, color, hue, sat, alarm, loops, effect, reachable etc.)
+- control plugs (eg. on/off, consumption, current, voltage, power, alert, reachable etc.)
+- sensors (eg. lightlevel, lux, presence, delay, duration, temperature, battery, fire, carbonmonoxide, vibration etc.)
+- switches/remotes (eg. on/off, buttonevent etc.)
+- groups (eg. anyon, all_on, effect, scene & all light attributes etc.)
+- scenes (eg. on/off, state)
+- timers (set on-timer or off-timer for all devices)
+
+Functionality depends on the availability within the specific devices.
+
 <br>
 
 So, you need
@@ -24,8 +36,6 @@ So, you need
 
 
 <br>
-
-# *This is work in progress, although working already*
 
 <br>
 <br>
