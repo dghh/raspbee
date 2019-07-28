@@ -3,8 +3,9 @@
 
 This modul connects the **RaspBee** extension board (for Zigbee Devices) or the **ConBee** usb stick with IP Symcon.
 
+It enables you to work with most ZigBee devices without the need of other specific bridges. 
 
-It enables you to work with most ZigBee devices without the need of other specific bridges.
+One of the main advantages (and one of the reasons to write this modul...) is that there is no frequent "pull" of the current status of the devices. This will keep the system performance untouched by frequent requests to the bridge, although nothing changed in the meantime. Status will be updated in real time (very important eg. for presence sensors) as soon as and only if something changes in the status of the devices. This is done of course only for the specific attribute of the changed device. This keeps also the write activity to the system storage as low as posasible (SD cards...)
 
 Supported functionality:
 
