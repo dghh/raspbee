@@ -16,6 +16,7 @@ Supported functionality (functionality depends on the availability within the sp
 - **lights** (eg. on/off, color, hue, sat, alarm, loops, effect, reachable etc.)
 - **plugs** (eg. on/off, consumption, current, voltage, power, alert, reachable etc.)
 - **sensors** (eg. lightlevel, lux, presence, delay, duration, temperature, battery, fire, carbonmonoxide, vibration etc.)
+    --> different attributes of a sensors will be grouped to one sensor (as it is physically anyway)
 - **switches** (eg. on/off, buttonevent etc.)
 - **remotes** (eg. on/off, buttonevent etc.)
 - **groups** (eg. anyon, all_on, effect, scene & all light attributes etc.)
