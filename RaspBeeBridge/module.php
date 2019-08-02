@@ -218,9 +218,13 @@ class RaspBeeBridge extends IPSModule
 			$user = @@IPS_GetProperty($MyParent, 'User');
 		}	
 	
+	$is_group=0;
 	$id=IPS_GetProperty($light,'PlugId');
-	if(!id)$id=IPS_GetProperty($light,'LightId');	
-	
+	if(!$id)$id=IPS_GetProperty($light,'LightId');	
+	if(!$id){
+		$id=IPS_GetProperty($light,'GroupId');	
+		if($id)$is_group=1;
+	}
  		if($on_off!=""){
 			if($on_off=="on")$on_off=true;
 			if($on_off=="off")$on_off=false;
@@ -229,18 +233,32 @@ class RaspBeeBridge extends IPSModule
 		}
 
 		$name=$light;
-		$json = array(
-        'name' => $name,
-        'description' => "Timer for ".$name,
-		'command' => array(
-            'address' => "/api/$user/lights/$id/state",
-            'method' => "PUT",
-            'body'=> array(
-                'on' =>$on_off)
-			),
-		'time' =>"PT".$time	
-        );
-    
+		if($is_group==0){
+			$json = array(
+			'name' => $name,
+			'description' => "Timer for ".$name,
+			'command' => array(
+				'address' => "/api/$user/lights/$id/state",
+				'method' => "PUT",
+				'body'=> array(
+					'on' =>$on_off)
+				),
+			'time' =>"PT".$time	
+			);
+		}else{
+			$json = array(
+			'name' => $name,
+			'description' => "Timer for ".$name,
+			'command' => array(
+				'address' => "/api/$user/groups/$id/state",
+				'method' => "PUT",
+				'body'=> array(
+					'on' =>$on_off)
+				),
+			'time' =>"PT".$time	
+			);
+		}		
+		
 	$data=json_encode($json,true);
 	$data = str_replace("\\/", "/", $data);
 		        
