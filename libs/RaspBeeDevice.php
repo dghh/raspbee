@@ -632,8 +632,12 @@ abstract class RaspBeeDevice extends IPSModule
 							$oldvalue=GetValue($ident_no);
 							if($oldvalue !=1)SetValue($ident_no,1);
 							if($oldvalue !=0)SetValue($ident_no,0);
+						}
+						if($ident_no>0 && !$value){
+							SetValue($ident_no,0);
 						}		
 					}
+										
 				}	
 			}
 		}
