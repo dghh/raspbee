@@ -250,7 +250,7 @@ class RaspBeeBridge extends IPSModule
 			'name' => $name,
 			'description' => "Timer for ".$name,
 			'command' => array(
-				'address' => "/api/$user/groups/$id/state",
+				'address' => "/api/$user/groups/$id/action",
 				'method' => "PUT",
 				'body'=> array(
 					'on' =>$on_off)
